@@ -3,18 +3,18 @@
   "main": "dist/index.js",
   "scripts": {
     "debug": "webpack-dev-server --hot debug.ts",
-    "babelify": "./node_modules/.bin/babel --config-file ./babel.config.js src --out-dir dist --copy-files --extensions '.ts,.tsx,.js, .jsx' --source-maps inline",
+    "babelify": "./node_modules/.bin/babel --config-file ./.babel.config.js src --out-dir dist --copy-files --extensions '.ts,.tsx,.js, .jsx' --source-maps inline",
     "build": "npm i && tsc",
-    "build:babel": "npm i && tsc && ./node_modules/.bin/babel --config-file ./babel.config.js src --out-dir dist --copy-files --extensions '.ts,.tsx,.js, .jsx' --source-maps inline"
+    "build:babel": "npm i && tsc && ./node_modules/.bin/babel --config-file ./.babel.config.js src --out-dir dist --copy-files --extensions '.ts,.tsx,.js, .jsx' --source-maps inline"
   },
   "version": "0.0.1",
   "devDependencies": {
+    "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-typescript": "^7.12.13",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
-    "babel-cli": "^6.26.0",
     "babel-loader": "^8.1.0",
     "eslint": "^7.12.1",
     "html-webpack-plugin": "^4.5.0",
