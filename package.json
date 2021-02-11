@@ -4,7 +4,8 @@
   "scripts": {
     "debug": "webpack-dev-server --hot debug.ts",
     "babelify": "./node_modules/.bin/babel --config-file ./babel.config.js src --out-dir dist --copy-files --extensions '.ts,.tsx,.js, .jsx' --source-maps inline",
-    "build": "npm i && tsc && ./node_modules/.bin/babel --config-file ./babel.config.js src --out-dir dist --copy-files --extensions '.ts,.tsx,.js, .jsx' --source-maps inline"
+    "build": "npm i && tsc",
+    "build:babel": "npm i && tsc && ./node_modules/.bin/babel --config-file ./babel.config.js src --out-dir dist --copy-files --extensions '.ts,.tsx,.js, .jsx' --source-maps inline"
   },
   "version": "0.0.1",
   "devDependencies": {
